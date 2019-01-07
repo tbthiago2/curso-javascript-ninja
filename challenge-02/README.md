@@ -4,16 +4,26 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+? 
+
+function soma(x,y) {
+return x + y;
+}
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
 ?
 
+var mysoma = soma(2 , 5) + 5;
+
 // Qual o valor atualizado dessa variável?
 ?
 
+12;
+
 // Declare uma nova variável, sem valor.
 ?
+
+var qualquer;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
@@ -22,11 +32,20 @@ Onde VALOR é o novo valor da variável.
 */
 ?
 
+function valor() {
+var qualquer = 5;
+return "O valor da variável é VALOR" + 5;
+}
+
 // Invoque a função criada acima.
 ?
 
+valor();
+
 // Qual o retorno da função? (Use comentários de bloco).
 ?
+
+/*O valor davariável é VALOR 5*/;
 
 /*
 Crie uma função com as seguintes características:
@@ -37,17 +56,30 @@ Crie uma função com as seguintes características:
 */
 ?
 
+function myfunction(a , b , c) {
+if(a === undefined || b === undefined || c === undefined) {
+return "Preencha todos os valores corretamente!";
+} else { myfunction (a * b * c) + 2;
+};
+
 // Invoque a função criada acima, passando só dois números como argumento.
 ?
 
+myfunction(2 , 4);
+
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
+
+//Preencha todos os valores corretamente!;
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
 ?
+myfunction(2 , 4 , 6);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
+
+//50;
 
 /*
 Crie uma função com as seguintes características:
@@ -59,6 +91,17 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 ?
+
+function newfunction(x , y , z) {
+if(x) {
+return x;
+} else if(x , y) {
+return x + y;
+} else if(x , y , z) {
+return (x + y) / z;
+} else if (x === undefined, y === undefined, z === undefined) {
+return "false";
+} else "null"
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 ?
